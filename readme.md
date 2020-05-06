@@ -1,6 +1,6 @@
-# Reading the Benewake TFmini LIDAR Module via I2C in Python
+# Reading the Benewake TFmini-I2C LIDAR Module in Python
 
-The TFmini I2C sensor module is termed a 'LIDAR' module, but really a fast TOF (time of flight) sensor based on a 850nm IR diode. The more common version of the sensor has a serial (UART) interface, but an I2C version exists. The TFmini I2C module can read a distance between 30 cm to 1200 cm at up to 1000hz (standard: 100 Hz). The range and precision depends somewhat on lighting (shorter maximum range in bright sunlight) and reflectivity of the target (shorter maximum range for dark surfaces). 
+The TFmini I2C sensor module is termed a 'LIDAR' module, but really a fast TOF (time of flight) sensor based on a 850nm IR diode. The more common version of the sensor has a serial (UART) interface, but an I2C-only version exists. The TFmini-I2C module can read a distance between 30 cm to 1200 cm at up to 1000hz (standard: 100 Hz). The range and precision depends somewhat on lighting (shorter maximum range in bright sunlight) and reflectivity of the target (shorter maximum range for dark surfaces). 
 
 On a Raspberry Pi, I2c is often the more attractive option communication option, as it allows more sensors to be used in parallel. Unfortunately, as of May 2020, no python library or implementation to read the sensor via python was available online. This repository contains a compact proof of concept that allows reading the sensor values using the smbus2 library in Python, and will hopefully be expanded into a compact library.
 
