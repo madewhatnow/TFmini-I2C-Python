@@ -6,13 +6,13 @@ On a Raspberry Pi, I2c is often the more attractive option communication option,
 
 The Benewake TFmini product line unfortunately (?) contains several models, with rather different characteristics and communication protocol. The script described here is ONLY intended for the TFmini I2c model (
 
-*## TFmini
+### TFmini
 
 Only supports UART/serial
 
 ### TFmini I2C
 
-I2c enabled out of the box. **This is the sensor module used here**
+I2c enabled out of the box. **The python code here is inteded for this model**
 [DigiKey](https://www.digikey.com/products/en/sensors-transducers/optical-sensors-distance-measuring/542?k=tfmini&k=&pkeyword=tfmini&sv=0&pv41=356919&sf=0&quantity=&ColumnSort=0&page=1&pageSize=25)
 [Robotshop](https://www.robotshop.com/en/benewake-tfmini-micro-lidar-module-i2c-12-m.html)
 [Sparkfun(https://www.sparkfun.com/products/14786)
@@ -27,7 +27,7 @@ Newer version of the TFmini, supports both serial and I2C. Slightly different me
 
 ## Hardware setup
 
-The TFmini-I2C module runs on 5V (with a peak current of 80mA!), so make sure the power supply is sufficient. THe SCL and SDA lines run on 3.3V logic level, so can be directly interfaced with a Raspberry Pi. 
+The TFmini-I2C module runs on 5V (with a peak current of 80mA!), so make sure the power supply can support the sensor. THe SCL and SDA lines run on 3.3V logic level, and can therefor be directly interfaced with a Raspberry Pi. 
 
 Potential concerns: the sensor might use clock stretching, which is broken on Raspberry Pis (supposedly fixed on the Raspberry Pi 4). Reducing the I2C bus speed, or creating a device tree overlay / software I2C bus should fix any problems. 
 
