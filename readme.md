@@ -86,6 +86,9 @@ The standard I2C address of the sensor is 0x10, but can be changed in the range 
 ```
   Sensor0.setAddress(0x11)
 ```
+
+Reading the sensor is fast. On a Raspberry Pi 4, the distance values for 3 different sensors are returned in around 4 milliseconds total. 
+
 Enjoy!
 
 
