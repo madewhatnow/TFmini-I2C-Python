@@ -15,7 +15,7 @@ Only supports UART/serial
 I2c enabled out of the box. **The python code here is inteded for this model**
 [DigiKey](https://www.digikey.com/products/en/sensors-transducers/optical-sensors-distance-measuring/542?k=tfmini&k=&pkeyword=tfmini&sv=0&pv41=356919&sf=0&quantity=&ColumnSort=0&page=1&pageSize=25)
 [Robotshop](https://www.robotshop.com/en/benewake-tfmini-micro-lidar-module-i2c-12-m.html)
-[Sparkfun(https://www.sparkfun.com/products/14786)
+[Sparkfun](https://www.sparkfun.com/products/14786)
 
 ### TFmini-S
 
